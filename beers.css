@@ -1,16 +1,3 @@
-a {
-    text-decoration: none;
-    color: black;
-}
-a:link, a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-
 .beers-bg {
     position: relative;
     background-color: #E1C699;
