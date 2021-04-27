@@ -7,17 +7,35 @@ class ThreadDisplay extends Component {
   constructor(props) {
     super(props);
 
+    this.databaseRef = this.props.database.ref().child('post');
     this.addPost = this.addPost.bind(this);
+    this.updateLocalState = this.updateLocalState.bind(this);
 
     this.state = {
       posts: [],
     }
   }
-  
-  addPost(newPostBody){
-    const newState = Object.assign({}, this.state);
-    newState.posts.push(newPostBody);
-    this.setState(newState);
+
+  componentWillMount() {
+    const {updateLocalState} = this;
+    this.databaseRef.on('child_added', snapshot => {
+      const response = snapshot.val();
+      updateLocalState(response);
+    });
+  }
+
+  updateLocalState(response) {
+    const posts = this.state.posts;
+    const brokenDownPost = response.postBody.split(/[\r\n]/g);
+    posts.push(brokenDownPost);
+    this.setState({
+      posts: posts,
+    });
+  }
+
+  addPost(postBody){
+    const postToSave = {postBody};
+    this.databaseRef.push().set(postToSave);
   }
 
   render() {

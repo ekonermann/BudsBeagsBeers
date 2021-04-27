@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta http-equiv="refresh" content="2" >
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <link rel = "stylesheet" href = "main.css">
     <title>Buds, Beagles, and Beer</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class = "header">
         <h1>Buds, Beagles, and Beer</h1>
         <button class = "login-signup">Login/Sign-Up</button>
@@ -35,7 +35,7 @@
                 <a href = "beers.html#Kolsch">Kolsch</a>
             </div>
       </div>
-      <a href = "forums.html">Forums</a>
+      <div id="like_button_container"><a>Forums</a></div>
       <a href = "https://sites.google.com/view/beaglesand12s/home">Beagles and 12s</a>
       <a href = "gallery.html">Gallery</a>
     </div>
@@ -65,5 +65,12 @@
             CAN BUY MERCH.</p></div>
         <img src = "beagles12s.jpg" class = "crop-pic">
     </div>
-</body>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="index.js"></script>
+  </body>
 </html>
