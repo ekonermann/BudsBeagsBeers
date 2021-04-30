@@ -3,7 +3,7 @@ import '../App.css';
 import ThreadDisplay from '../ThreadDisplay/Components/ThreadDisplay'
 import firebase from 'firebase/app';
 import 'firebase/database';
-//import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class Forums extends Component {
   constructor(props) {

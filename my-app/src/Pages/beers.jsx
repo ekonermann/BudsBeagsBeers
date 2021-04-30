@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./main.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import logo from './Logo.png'
+import welcomePic from './Welcome Pic.JPG';
+
+const symbol = "\u25c8";
+const url = "https://sites.google.com/view/beaglesand12s/home";
 
 const Beers = () => {
   return (
@@ -14,12 +20,10 @@ const Beers = () => {
           <button class = "login-signup">Login/Sign-Up</button>
         </div>
         <div class="navbar">
-          <Link to = "/home">Home</Link>
-          <Link to = "/learn">Learn</Link>
+          <Link to = "/home" style = {{color: 'black', position: 'absolute', left:20}}>Home</Link>
+          <Link to = "/learn" style = {{color: 'black', position: 'absolute', left:100}}>Learn</Link>
           <div class="dropdown">
-            <button class="dropbtn">Beer
-                <i class="fa fa-caret-down"></i>
-            </button>
+            <button class="dropbtn">Beer</button>
             <div class="dropdown-content">
                 <a href = "#Porter">Porter</a>
                 <a href = "#Stout">Stout</a>
@@ -37,15 +41,14 @@ const Beers = () => {
                 <a href = "#Kolsch">Kolsch</a>
             </div>
           </div>
-          <Link to = "/forums">Forums</Link>
-          <Link to = "https://sites.google.com/view/beaglesand12s/home">Beagles and 12s</Link>
-          <Link to = "/gallery">Gallery</Link>
+          <Link to = "/forums" style = {{color: 'black', position: 'absolute', left:245}}>Forums</Link>
+          <a href = {url} style = {{color: 'black', position: 'absolute', left:330}}>Beagles and 12s</a>
         </div>
         <div class = "logo-bg">
-          <img src = "logo.png" class = "logo" />
+          <img src = {logo} class = "logo" />
         </div>
         <div class = "beers-bg">
-          <div class = "page-title">&#9672 Choose Your Type &#9672</div>
+          <div class = "page-title">{symbol} Choose Your Type {symbol}</div>
           <div class = "inner-beer inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
@@ -71,102 +74,102 @@ const Beers = () => {
           </div>
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Porter">&#9672 Porter &#9672</a></div>
+          <div class = "page-title"><a id = "Porter">{symbol} Porter {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-            <img src = "Welcome Pic.jpg" class = "crop-pic" />
+            <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Stout">&#9672 Stout &#9672</a></div>
+          <div class = "page-title"><a id = "Stout">{symbol} Stout {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "IPA">&#9672 IPA &#9672</a></div>
+          <div class = "page-title"><a id = "IPA">{symbol} IPA {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Pale Ale">&#9672 Pale Ale &#9672</a></div>
+          <div class = "page-title"><a id = "Pale Ale">{symbol} Pale Ale {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Brown Ale">&#9672 Brown Ale &#9672</a></div>
+          <div class = "page-title"><a id = "Brown Ale">{symbol} Brown Ale {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Pilsner">&#9672 Pilsner &#9672</a></div>
+          <div class = "page-title"><a id = "Pilsner">{symbol} Pilsner {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Lager">&#9672 Lager &#9672</a></div>
+          <div class = "page-title"><a id = "Lager">{symbol} Lager {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Wheat">&#9672 Wheat &#9672</a></div>
+          <div class = "page-title"><a id = "Wheat">{symbol} Wheat {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Sour">&#9672 Sour &#9672</a></div>
+          <div class = "page-title"><a id = "Sour">{symbol} Sour {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Belgian">&#9672 Belgian &#9672</a></div>
+          <div class = "page-title"><a id = "Belgian">{symbol} Belgian {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Amber">&#9672 Amber &#9672</a></div>
+          <div class = "page-title"><a id = "Amber">{symbol} Amber {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Hefeweizen">&#9672 Hefeweizen &#9672</a></div>
+          <div class = "page-title"><a id = "Hefeweizen">{symbol} Hefeweizen {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Saison">&#9672 Saison &#9672</a></div>
+          <div class = "page-title"><a id = "Saison">{symbol} Saison {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title"><a id = "Kolsch">&#9672 Kolsch &#9672</a></div>
+          <div class = "page-title"><a id = "Kolsch">{symbol} Kolsch {symbol}</a></div>
           <div class = "inner-bg"><p> TELL USERS TO CHOOSE A BEER BELOW AND
             THAT THEY WILL GET AN OVERVIEW OF WHAT KIND OF BEER IT IS, AND
             EXTENSIVE INFO ON IT.</p></div>
-          <img src = "Welcome Pic.jpg" class = "crop-pic" />
+          <img src = {welcomePic} class = "crop-pic" />
         </div>
       </body>
     </html>

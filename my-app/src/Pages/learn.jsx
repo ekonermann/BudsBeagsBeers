@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./main.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import logo from './Logo.png'
+import welcomePic from './Welcome Pic.JPG';
+import earlyBrew from './Early  Brew.jpg';
+
+const symbol = "\u25c8";
+const url = "https://sites.google.com/view/beaglesand12s/home";
 
 const Learn = () => {
   return (
@@ -14,14 +21,12 @@ const Learn = () => {
           <button class = "login-signup">Login/Sign-Up</button>
         </div>
         <div class="navbar">
-          <Link to = "/home">Home</Link>
-          <Link to = "/learn">Learn</Link>
+          <Link to = "/home" style = {{color: 'black', position: 'absolute', left:20}}>Home</Link>
+          <Link to = "/learn" style = {{color: 'black', position: 'absolute', left:100}}>Learn</Link>
           <div class="dropdown">
-            <button class="dropbtn">Beer
-                <i class="fa fa-caret-down"></i>
-            </button>
+            <button class="dropbtn">Beer</button>
               <div class="dropdown-content">
-                <a href = "beers.html#Porter">Porter</a>
+                <a href = "beers#Porter">Porter</a>
                 <a href = "beers.html#Stout">Stout</a>
                 <a href = "beers.html#IPA">IPA</a>
                 <a href = "beers.html#Pale Ale">Pale Ale</a>
@@ -37,20 +42,19 @@ const Learn = () => {
                 <a href = "beers.html#Kolsch">Kolsch</a>
               </div>
           </div>
-          <Link to = "/forums">Forums</Link>
-          <Link to = "https://sites.google.com/view/beaglesand12s/home">Beagles and 12s</Link>
-          <Link to = "/gallery">Gallery</Link>
+          <Link to = "/forums" style = {{color: 'black', position: 'absolute', left:245}}>Forums</Link>
+          <a href = {url} style = {{color: 'black', position: 'absolute', left:330}}>Beagles and 12s</a>
        </div>
         <div class = "logo-bg">
-          <img src = "logo.png" class = "logo" />
+          <img src = {logo} class = "logo" />
         </div>
         <div class = "welcome-bg">
-          <div class = "page-title">&#9672 Background &#9672</div>
+          <div class = "page-title">{symbol} Background {symbol}</div>
             <div class = "inner-bg"><p> HISTORY OF BEER BREWING FROM THE START TO TODAY.</p></div>
-            <img src = "Early  Brew.jpg" class = "crop-pic" />
+            <img src = {earlyBrew} class = "crop-pic" />
           </div>
         <div class = "welcome-bg">
-          <div class = "page-title">&#9672 What You Will Need &#9672</div>
+          <div class = "page-title">{symbol} What You Will Need {symbol}</div>
           <div class = "inner-bg"><p> GIVE INFORMATION ON THE COMPONENTS OF BEER BREWING.
             FROM THE POTS, KETTLES, AND INGREDIENTS. EXPLAIN THE EXPENSES OF THE PIECES AND HOW PROFESSIONALS DO IT.
             TALK ABOUT HOW YOU CAN DO IT IN YOUR OWN HOME AFFORDABLY AND ALSO BROADEN YOUR HORIZONS TO ADVANCED.</p></div>
