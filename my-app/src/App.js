@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
-import ThreadDisplay from './ThreadDisplay/Components/ThreadDisplay'
-import firebase from 'firebase/app';
-import 'firebase/database';
+//Pages
+import Homepage from "./Pages/home";
+import Beers from "./Pages/beers";
+import Learn from "./Pages/learn";
+import Gallery from "./Pages/gallery";
+import Forums from "./Pages/forums";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from 'react-router-dom';
 
 //import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    const config = {
-      apiKey: "AIzaSyC24MPtvE-CR0IqwWXQNNkMhCgWzlvPP1I",
-      authDomain: "budsbeaglesbeer.firebaseapp.com",
-      projectId: "budsbeaglesbeer",
-      storageBucket: "budsbeaglesbeer.appspot.com",
-      messagingSenderId: "678342376376",
-      appId: "1:678342376376:web:0190b4b4717bea9a57ad4d",
-      measurementId: "G-4TW6FW49RB"
-    };
-
-    this.app = firebase.initializeApp(config);
-    this.database = this.app.database();
-  }
   render() {
     return (
-      <ThreadDisplay database = { this.database } />
+      <Router>
+        <Switch>
+          <Route exact path = "/home" component = { Homepage } />
+          <Route exact path = "/beers" component = { Beers } />
+          <Route exact path = "/gallery" component = { Gallery } />
+          <Route exact path = "/learn" component = { Learn } />
+          <Route exact path = "/forums" component = { Forums } />
+        </Switch>
+      </Router>
     );
   }
 }
