@@ -11,7 +11,7 @@ a:hover {
     color: black;
 }
 
-html { font-family: "Georgia", serif; }
+html { font-family: "Radley", serif; }
 
 body {
     padding: 0px;
@@ -56,6 +56,7 @@ body {
   height: 47px;
   border: 3px solid black;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
 }
 
 .dropdown {
@@ -73,7 +74,7 @@ body {
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin-top: -13px;
+  margin-top: -30px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn { background-color: orange; }
@@ -275,7 +276,7 @@ ul#horizontal-list li {
     background-color: #E1C699;
     color: black;
     margin-top: -3px;
-    height: 380px;
+    height: 300px;
     border: 3px solid black;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -352,6 +353,24 @@ form.example::after {
     border: 3px solid black;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.post-bg {
+  height: 100%;
+  position: relative;
+  background-color: orange;
+  color: black;
+  margin-top: -3px;
+  border: 3px solid black;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.post-title {
+  position: relative;
+  font-size: 18px;
+  margin: 1em 20%;
+  margin-bottom: -10px;
+
+}
+
+
 
 /*
 .forum-post-bg {

@@ -1,6 +1,7 @@
 import '../Styles/Post.css';
 
 const Post = (props) => (
+  <div className = "post-bg">
   <div className = "card card-default post-body">
     <div className = "card-body">
       {
@@ -9,6 +10,7 @@ const Post = (props) => (
         ))
       }
     </div>
+  </div>
   </div>
 );
 
