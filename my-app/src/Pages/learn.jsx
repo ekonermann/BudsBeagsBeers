@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./main.css";
+import "./Style/main.css";
 import 'bootstrap/dist/css/bootstrap.css';
-import logo from './Logo.png'
-import welcomePic from './Welcome Pic.JPG';
-import earlyBrew from './Early  Brew.jpg';
-import yuengling from './yuengling.jpeg';
+import logo from './Images/Logo.png'
+import earlyBrew from './Images/Early  Brew.jpg';
+import yuengling from './Images/yuengling.jpeg';
 
 const symbol = "\u25c8";
 const url = "https://sites.google.com/view/beaglesand12s/home";
@@ -22,7 +21,7 @@ const Learn = () => {
           <button class = "login-signup">Login/Sign-Up</button>
         </div>
         <div class="navbar">
-          <Link to = "/home" style = {{color: 'black', position: 'absolute', left:20}}>Home</Link>
+          <Link to = "/" style = {{color: 'black', position: 'absolute', left:20}}>Home</Link>
           <Link to = "/learn" style = {{color: 'black', position: 'absolute', left:100}}>Learn</Link>
           <div class="dropdown">
             <button class="dropbtn">Beer</button>
@@ -47,13 +46,13 @@ const Learn = () => {
           <a href = {url} style = {{color: 'black', position: 'absolute', left:330}}>Beagles and 12s</a>
        </div>
         <div class = "logo-bg">
-          <img src = {logo} class = "logo" />
+          <img src = {logo} alt = "Logo" class = "logo" />
         </div>
         <div class = "welcome-bg" style = {{height: 685}}>
           <div class = "page-title">{symbol} Background {symbol}</div>
             <div class = "inner-bg" style = {{height: 565}}><p style = {{marginTop: 10, paddingRight: 10}}>&emsp;Beer brewing has been an integral part of humanity for centuries. It is believed that beer was invented 12,000 years ago around the time agriculture started. As hunter-gatherers settled, they stumbled across the fermentation process for beer. It's no surprise that people were able to quickly figure out how to brew this tremendous beverage. Most likely, beer first began in Mesopotamia where civilizations first started. There was evidence uncovered of malted barley scraps and beer residue. Over time, beer has made it to all parts of the world like it is today. Commercial brewing arrived in North America in 1632. However, beer was not mass-produced and consumed until after the Civil War. Yuengling, based in Pottsville, Pennsylvania is the oldest beer brewing company in America. It was established in 1829.</p></div>
-            <img src = {earlyBrew} class = "crop-pic"  style = {{height: 277.5, marginTop: -30}}/>
-            <img src = {yuengling} class = "crop-pic"  style = {{height: 335, marginTop: 260}}/>
+            <img src = {earlyBrew} alt = "Early Brew" class = "crop-pic"  style = {{height: 277.5, marginTop: -30}}/>
+            <img src = {yuengling} alt = "Yuengling" class = "crop-pic"  style = {{height: 335, marginTop: 260}}/>
           </div>
         <div class = "welcome-bg" style = {{height: 730}}>
           <div class = "page-title">{symbol} What You Will Need {symbol}</div>

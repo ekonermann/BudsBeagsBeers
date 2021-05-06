@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../Styles/PostEditor.css';
-import '../../Pages/main.css';
+import '../../Pages/Style/main.css';
 import { Link } from 'react-router-dom';
-import logo from '../../Pages/Logo.png'
+import logo from '../../Pages/Images/Logo.png'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const symbol = "\u25c8";
@@ -44,7 +44,7 @@ class PostEditor extends Component {
           <button class = "login-signup">Login/Sign-Up</button>
         </div>
         <div class="navbar">
-          <Link to = "/home" style = {{color: 'black', position: 'absolute', left:20}} >Home</Link>
+          <Link to = "/" style = {{color: 'black', position: 'absolute', left:20}} >Home</Link>
           <Link to = "/learn" style = {{color: 'black', position: 'absolute', left:100}}>Learn</Link>
           <div class="dropdown">
             <button class="dropbtn">Beer</button>
@@ -69,7 +69,7 @@ class PostEditor extends Component {
           <a href = {url} style = {{color: 'black', position: 'absolute', left:330}}>Beagles and 12s</a>
         </div>
         <div class = "logo-bg">
-          <img src = {logo} class = "logo" />
+          <img src = {logo} alt = "Logo" class = "logo" />
         </div>
         <div class = "forums-bg">
             <div class = "page-title">{symbol} Forums {symbol}</div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from "./main.css";
+import "./Style/main.css";
 import 'bootstrap/dist/css/bootstrap.css';
-import logo from './Logo.png'
-import welcomePic from './Welcome Pic.JPG';
-import beagles12s from './Beags12s.jpg';
+import logo from './Images/Logo.png'
+import welcomePic from './Images/Welcome Pic.JPG';
+import beagles12s from './Images/Beags12s.jpg';
 
 const symbol = "\u25c8";
 const url = "https://sites.google.com/view/beaglesand12s/home";
@@ -46,7 +46,7 @@ const Homepage = () => {
           <a href = {url} style = {{color: 'black', position: 'absolute', left:330}}>Beagles and 12s</a>
         </div>
         <div class = "logo-bg">
-          <img src = {logo} class = "logo" />
+          <img src = {logo} alt = "Logo" class = "logo" />
         </div>
         <div class = "welcome-bg" style = {{height: 475}}>
           <div class = "page-title">{symbol} Welcome {symbol}</div>
@@ -56,7 +56,7 @@ const Homepage = () => {
           learn how to brew beer, or educate yourself, you are in the right place. There is no better way to enjoy friends and
           family than a to have a cold beer with them. The beer brewing community is perfect for the beginner to advanced beer connoisseurs.
           </p3></div>
-          <img src = {welcomePic} class = "crop-pic-welcome" />
+          <img src = {welcomePic} alt = "Welcome Brew" class = "crop-pic-welcome" />
         </div>
         <div class = "welcome-bg" style = {{height: 580}}>
           <div class = "page-title">{symbol} Get Started {symbol}</div>
@@ -69,10 +69,11 @@ const Homepage = () => {
              post to the community about your own beer brew.</p2> </forums>
           </div>
         </div>
+
         <div class = "welcome-bg" style = {{height: 480}}>
           <div class = "page-title">{symbol} Beagles and 12s {symbol}</div>
           <div class = "inner-bg" style = {{height: 355}}><p style = {{marginTop: 10, paddingRight: 10}}>&emsp;Every type of hunting needs its brand. Gilly Simpson, creator of Beagles and 12s, put a brand in motion in March of 2019 for rabbit hunters. There's no better way to enjoy a long day of hunting than to have a beer. Gilly's brand was an inspiraion for the name of this website. His father and mine brewed beer together for years, and they both enjoy rabbit hunting during the winter season. Visit the Beagles and 12s website if you are interested in rabbit hunting as well as good beer!</p></div>
-          <img src = {beagles12s} class = "crop-pic" style= {{height: 355}} />
+          <img src = {beagles12s} alt = "Beagles and 12s" class = "crop-pic" style= {{height: 355}} />
         </div>
       </body>
     </html>
