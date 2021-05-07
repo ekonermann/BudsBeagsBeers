@@ -36,7 +36,7 @@ body {
     top: -2px;
 }
 
-.login-signup {
+#login-signup {
     float: right;
     cursor: pointer;
     font-size: 16px;
@@ -47,6 +47,36 @@ body {
     height: 35px;
     text-align: center;
     margin: 2px 2px;
+}
+
+.auth-login {
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  height: 35px;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+.auth-reg {
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  height: 35px;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+.wrapperL{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: white;
 }
 
 .navbar{
@@ -128,6 +158,10 @@ body {
     height: 600px;
     border: 3px solid black;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.auth-bg {
+    margin: 1em 20%;
+    background-color: #E1C699;
 }
 
 .page-title {

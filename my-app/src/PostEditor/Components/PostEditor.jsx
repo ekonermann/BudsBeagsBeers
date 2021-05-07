@@ -39,10 +39,10 @@ class PostEditor extends Component {
         <title>Buds, Beagles, and Beer</title>
       </head>
       <body>
-        <div class = "header">
-          <h1>Buds, Beagles, and Beer</h1>
-          <button class = "login-signup">Login/Sign-Up</button>
-        </div>
+      <div class = "header">
+        <h1>Buds, Beagles, and Beer</h1>
+        <button id = "login-signup">Login/Sign-Up</button>
+      </div>
         <div class="navbar">
           <Link to = "/" style = {{color: 'black', position: 'absolute', left:20}} >Home</Link>
           <Link to = "/learn" style = {{color: 'black', position: 'absolute', left:100}}>Learn</Link>

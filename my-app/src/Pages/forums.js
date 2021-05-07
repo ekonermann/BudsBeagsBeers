@@ -3,7 +3,28 @@ import '../App.css';
 import ThreadDisplay from '../ThreadDisplay/Components/ThreadDisplay'
 import firebase from 'firebase/app';
 import 'firebase/database';
+//import "firebase/firestore";
 import 'bootstrap/dist/css/bootstrap.css';
+/*export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+
+export const generateUserDocument = async (user, additionalData) => {
+  if (!user) return;
+  const userRef = firestore.doc(`users/${user.uid}`);
+  const snapshot = await userRef.get();
+  if (!snapshot.exists) {
+    const { email, displayName, photoURL } = user;
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        photoURL,
+        ...additionalData
+      });
+    } catch (error) {
+      console.error("Error creating user document", error);
+    }
+  }*/
 
 class Forums extends Component {
   constructor(props) {
@@ -31,6 +52,8 @@ class Forums extends Component {
       firebase.app(); // if already initialized, use that one
       //this.app.database();
     }
+
+
     // this.app = firebase.initializeApp(config);
     // this.database = this.app.database();
   }

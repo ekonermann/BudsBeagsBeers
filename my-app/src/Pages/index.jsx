@@ -19,7 +19,7 @@ const Homepage = () => {
       <body>
         <div class = "header">
           <h1>Buds, Beagles, and Beer</h1>
-          <button class = "login-signup">Login/Sign-Up</button>
+          <button id = "login-signup" type="button" onClick = {(e) => { e.preventDefault(); window.location.href='signIn';}}>Login/Sign-Up</button>
         </div>
         <div class="navbar">
           <Link to = "/home" style = {{color: 'black', position: 'absolute', left:20}} >Home</Link>
